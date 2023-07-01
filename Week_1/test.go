@@ -1,9 +1,8 @@
 package main
 
-func Sum(a, b int) (int, bool, bool) {
-	return a + b, a == b, a != b
-}
+//f 为fmt包的别名
+import f "fmt"
+
 func main() {
-	println("Hello Word!")
-	print(Sum(1, 2))
+	f.Println("Hello Word")
 }
