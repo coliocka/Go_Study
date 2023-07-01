@@ -4,10 +4,6 @@ import (
 	"fmt"
 )
 
-const c = "C"
-
-var v int = 5
-
 type T struct {
 }
 
