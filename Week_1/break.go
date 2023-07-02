@@ -29,12 +29,12 @@ LABEL1:
 		}
 	}
 	//当执行goto过后，就会一直从头开始执行标签，所以程序不会退出，会一直继续下去
-LABEL2:
+	//LABEL2:
 	for j := 0; j < 3; j++ {
 		for {
 			fmt.Println(j)
 			goto LABEL2
 		}
 	}
-
+LABEL2:
 }
