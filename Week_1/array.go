@@ -6,7 +6,9 @@ func main() {
 	var a, b [2]int
 	c := [20]int{19: 1}  // 将索引为19的元素设置为1
 	d := [...]int{19: 1} //尽可能包含所有数组，所以d数组的大小为20
-	var p *[20]int = &c
+	var (
+		p = &c
+	)
 	fmt.Println(p) // 打印结果多了一个&符号，说明是对c取地址
 	fmt.Println(c)
 	fmt.Println(d)
