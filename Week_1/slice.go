@@ -82,4 +82,7 @@ func main() {
 	// 就是把slice_1中的索引为1,2,3的元素拷贝到slice_2中索引为2的元素上，因为slice_2中只有一个需要拷贝的
 	// 所以就只拷贝slice_1中索引为1的元素，也就是2，到slice_2[2]上
 	Println(slice_1, slice_2) //[1 2 3 4 5 6] [7 8 2]
+
+	slice_3 := slice_1[:cap(slice_1)] // 将slice_1切片赋值给slice_3切片
+	Println(slice_3)
 }
